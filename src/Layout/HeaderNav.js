@@ -1,30 +1,45 @@
 "use client";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import menu from "@/components/menu";
+import "../app/style/globals.scss";
+import { DM_Sans } from "next/font/google";
+import Link from "next/link";
+import Logo from "@/img/logo";
+
+const DMSans = DM_Sans({ subsets: ["latin"], weight: ["500"] });
 
 const HeaderNav = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="mx-auto my-2 my-lg-0"
-            style={{ maxHeight: "100px" }}
-            navbarScroll
-          >
-            <Nav.Link href="#action1">Home</Nav.Link>
-          </Nav>
+    <>
+      <Navbar expand="lg" className="">
+        <Container>
+          <Link href="#">
+            <Logo />
+          </Link>
+          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Collapse id="navbarScroll">
+            <Nav
+              className="mx-auto my-2 my-lg-0"
+              style={{ maxHeight: "100px" }}
+              navbarScroll
+            >
+              {menu.map((item, i) => (
+                <Link style={DMSans.style} className="mx-3" key={i} href="#">
+                  {item.title}
+                </Link>
+              ))}
+            </Nav>
 
-          <Button variant="outline-success">Search</Button>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+            <Button className="nav-btn" variant="primary">
+              Contact Now
+            </Button>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </>
   );
 };
 
