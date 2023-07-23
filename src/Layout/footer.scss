@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+
+.footer {
+  background-color: #eeebf2;
+  padding-top: 5.625rem;
+  .bottom-left {
+    p {
+      font-family: "Open Sans", sans-serif !important;
+      padding-right: 40%;
+      font-size: 1.125rem;
+    }
+  }
+  .footer-service {
+    h3 {
+      font-weight: bold;
+      font-size: 1.6rem;
+      margin: 0;
+      color: $black-color;
+    }
+
+    .service-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 200px;
+      a {
+        text-decoration: none;
+        transition: 0.2s;
+        color: $gray;
+        font-size: 1.125rem;
+        &:hover {
+          color: $main;
+        }
+      }
+    }
+  }
+  .footer-resource {
+    h3 {
+      font-weight: bold;
+      font-size: 1.6rem;
+      margin: 0;
+      color: $black-color;
+    }
+    .service-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 250px;
+      a {
+        text-decoration: none;
+        transition: 0.2s;
+        color: $gray;
+        font-size: 1.125rem;
+        &:hover {
+          color: $main;
+        }
+      }
+    }
+  }
+  .footer-right {
+    p {
+      font-size: 1.125rem;
+    }
+    .bottom-input {
+      display: flex;
+
+      .footer-email {
+        height: 50px;
+        width: 255px;
+        padding-left: 8px;
+        border: none;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+
+        outline: none;
+        font-size: 1.125rem;
+      }
+      button {
+        background-color: $main;
+        height: 50px;
+        width: 50px;
+        border: none;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+    }
+  }
+  .social-icons {
+    width: 200px;
+    .icons ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      li {
+        cursor: pointer;
+        background-color: #f3f3f3;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 100%;
+        &:nth-child(1) {
+          svg path {
+            color: #337fff;
+          }
+        }
+        &:nth-child(2) {
+          svg path {
+            color: #fb3958;
+          }
+        }
+        &:nth-child(3) {
+          svg path {
+            color: #76d9ff;
+          }
+        }
+        &:nth-child(4) {
+          svg path {
+            color: red;
+          }
+        }
+        svg {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
