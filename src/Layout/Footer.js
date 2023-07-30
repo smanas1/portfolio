@@ -10,6 +10,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaPinterestP } from "react-icons/fa";
+import Copyright from "./Copyright";
 
 const Footer = () => {
   return (
@@ -90,6 +91,7 @@ const Footer = () => {
           </div>
         </Container>
       </div>
+      <Copyright />
     </>
   );
 };

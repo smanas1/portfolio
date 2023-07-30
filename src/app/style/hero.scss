@@ -1,0 +1,66 @@
+.hero {
+  margin-top: 8rem;
+  .hero-title {
+    font-size: 4.5rem;
+    font-weight: bold;
+    .creative {
+      background-color: $main;
+      color: $white;
+      padding: 0px 0.5rem;
+    }
+    .solution {
+      color: $main;
+    }
+  }
+  .hero-p {
+    font-size: 1.125rem;
+    color: $gray;
+    padding-right: 18%;
+    margin-top: 1.5rem;
+  }
+  .hero-buttons {
+    svg {
+      font-size: 1.3rem;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    button {
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
+      border: none;
+      background-color: $main;
+      color: $white;
+    }
+    .work {
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      display: inline-block;
+      padding-left: 2.5rem;
+      text-decoration-line: underline;
+      cursor: pointer;
+    }
+  }
+  .social {
+    display: flex;
+    svg {
+      cursor: pointer;
+    }
+    p {
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 400;
+      margin-right: 10%;
+      margin-bottom: 0;
+    }
+    .social-wrapper {
+      display: flex;
+      width: 6.375rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
