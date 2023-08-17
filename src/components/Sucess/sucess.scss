@@ -1,0 +1,85 @@
+.sucess {
+  .active {
+    background-color: $main !important;
+
+    h3 {
+      color: $white !important;
+    }
+    p {
+      color: $white !important;
+    }
+  }
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+  .sucess-title h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-right: 5rem;
+    span {
+      color: $main;
+    }
+  }
+  .sucess-items {
+    border: 1px solid $border;
+    transition: 0.3s;
+    background-color: $white;
+
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+      border: none;
+    }
+    h3 {
+      font-size: 1.125rem;
+      font-weight: bold;
+      color: $black-color;
+    }
+    p {
+      font-size: 1rem;
+      color: $gray;
+    }
+  }
+
+  // Left
+
+  .sucess-left {
+    button {
+      color: $main;
+      font-weight: bold;
+      font-size: 1.25rem;
+      padding: 18px 32px;
+      border-radius: 8px;
+      border-color: $main;
+      border: 1px solid;
+      background: none;
+    }
+    p {
+      font-size: 1.125rem;
+      color: $gray;
+      width: 470px;
+    }
+    .sucess-left-p {
+      border-left: 2px solid $main;
+      height: 80px;
+      padding-left: 0.825rem;
+      button {
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding: 0.7rem 1.5rem;
+        border-radius: 8px;
+        border: none;
+        background-color: $main;
+
+        color: $white;
+      }
+    }
+    .sucess-left-data {
+      margin-top: 160px;
+      margin-left: 0.825rem;
+
+      p {
+        width: 400px;
+      }
+    }
+  }
+}
