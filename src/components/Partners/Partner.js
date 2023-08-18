@@ -28,7 +28,7 @@ const Partner = () => {
                   width={65}
                   alt="partner"
                 />
-                <h3>Happy Mart</h3>
+                <h3>Lori Cracker</h3>
               </div>
               <div className=" partner-list">
                 <Image
@@ -37,7 +37,7 @@ const Partner = () => {
                   width={65}
                   alt="partner"
                 />
-                <h3>Happy Mart</h3>
+                <h3>Emad Fashion</h3>
               </div>
               <div className=" partner-list">
                 <Image
@@ -46,7 +46,7 @@ const Partner = () => {
                   width={65}
                   alt="partner"
                 />
-                <h3>Happy Mart</h3>
+                <h3>Docco Semims</h3>
               </div>
             </div>
           </div>
