@@ -1,4 +1,7 @@
 .agency {
+  .agencyactive {
+    margin-left: 50px;
+  }
   margin-top: 100px;
   margin-bottom: 100px;
   .agency-right {
@@ -10,7 +13,6 @@
       border-radius: 8px;
       transition: 0.2s;
       &:hover {
-        margin-left: 50px;
       }
     }
   }

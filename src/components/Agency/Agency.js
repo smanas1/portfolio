@@ -1,8 +1,29 @@
 "use client";
 
+import { agencyData } from "@/Data/agencyData";
 import Image from "next/image";
+import { useState } from "react";
 
 const Agency = () => {
+  const [apState, changeState] = useState({
+    activeObj: null,
+    objects: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
+  });
+
+  const toggleActive = (item, index) => {
+    changeState({
+      ...apState,
+      activeObj: apState.objects[index],
+    });
+  };
+
+  function toggleActiveStyle(index) {
+    if (apState.objects[index] == apState.activeObj) {
+      return "agencyactive";
+    } else {
+      return "inactive";
+    }
+  }
   return (
     <>
       <div className="container agency">
@@ -23,28 +44,33 @@ const Agency = () => {
           </div>
           <div className="col-lg-6">
             <div className="agency-right">
-              <div className="row ">
-                <div className="col-lg-10 agency-card">
-                  <div className="agency-card-logo ms-3 me-4">
-                    <Image
-                      width={64}
-                      height={64}
-                      src="/img/Group1.png"
-                      alt="agency"
-                    />
-                  </div>
-                  <div>
-                    <h3>Web Development</h3>
-                    <p className="pe-5">
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority.
-                    </p>
+              {agencyData.map((item, i) => (
+                <div
+                  key={i}
+                  onClick={() => toggleActive(item, i)}
+                  className={`row mb-5 `}
+                >
+                  <div
+                    className={`col-lg-10 agency-card ${toggleActiveStyle(i)}`}
+                  >
+                    <div className="agency-card-logo ms-3 me-4">
+                      <Image
+                        width={64}
+                        height={64}
+                        src={item.img}
+                        alt="agency"
+                      />
+                    </div>
+                    <div>
+                      <h3>{item.title}</h3>
+                      <p className="pe-5">{item.des}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              ))}
 
               {/* row 2 */}
-              <div className="row mt-5">
+              {/* <div className="row mt-5">
                 <div className="col-lg-10 agency-card">
                   <div className="agency-card-logo ms-3 me-4">
                     <Image
@@ -62,9 +88,9 @@ const Agency = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
               {/* row 3 */}
-              <div className="row mt-5">
+              {/* <div className="row mt-5">
                 <div className="col-lg-10 agency-card">
                   <div className="agency-card-logo ms-3 me-4">
                     <Image
@@ -82,7 +108,7 @@ const Agency = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
