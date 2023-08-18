@@ -80,7 +80,7 @@ const Slide = () => {
       <Slider {...settings}>
         <div>
           <Card className="slide-item me-5" style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="/Rectangle 2155.png" />
+            <Card.Img variant="top" src="/img/Rectangle2155.png" />
             <Card.Body>
               <div className="d-flex align-item-center ">
                 <RxCalendar className="mt-1 me-1" />
@@ -93,7 +93,7 @@ const Slide = () => {
         </div>
         <div>
           <Card className="slide-item" style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="/Rectangle 2157.png" />
+            <Card.Img variant="top" src="/img/Rectangle2157.png" />
             <Card.Body>
               <div className="d-flex align-item-center ">
                 <RxCalendar className="mt-1 me-1" />
@@ -106,7 +106,7 @@ const Slide = () => {
         </div>
         <div>
           <Card className="slide-item" style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="/Rectangle 2159.png" />
+            <Card.Img variant="top" src="/img/Rectangle2159.png" />
             <Card.Body>
               <div className="d-flex align-item-center ">
                 <RxCalendar className="mt-1 me-1" />

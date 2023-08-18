@@ -14,7 +14,7 @@ const Partner = () => {
             <div className="partner-wrapper">
               <div className=" partner-list " md={{ span: 4, offset: 4 }}>
                 <Image
-                  src="/Group 40.png"
+                  src="/img/Group40.png"
                   height={65}
                   width={65}
                   alt="partner"
@@ -23,25 +23,25 @@ const Partner = () => {
               </div>
               <div className=" partner-list">
                 <Image
-                  src="/Group 9870.png"
+                  src="/img/Group9870.png"
                   height={65}
                   width={65}
                   alt="partner"
                 />
                 <h3>Lori Cracker</h3>
               </div>
-              <div className=" partner-list">
+              <div className="partner-list">
                 <Image
-                  src="/Group 41.png"
+                  src="/img/Group41.png"
                   height={65}
                   width={65}
                   alt="partner"
                 />
                 <h3>Emad Fashion</h3>
               </div>
-              <div className=" partner-list">
+              <div className="partner-list">
                 <Image
-                  src="/Group 9872.png"
+                  src="/img/Group9872.png"
                   height={65}
                   width={65}
                   alt="partner"
