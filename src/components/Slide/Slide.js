@@ -36,7 +36,7 @@ const Slide = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     initialSlide: 0,
@@ -45,7 +45,7 @@ const Slide = () => {
         breakpoint: 991,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToScroll: 3,
           infinite: true,
           dots: true,
         },
@@ -69,7 +69,14 @@ const Slide = () => {
   };
   return (
     <div className="container">
-      <h2> Responsive </h2>
+      <div className="slider-top">
+        <h2>Latest Blog</h2>
+        <p>
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised.
+        </p>
+      </div>
       <Slider {...settings}>
         <div>
           <Card className="slide-item me-5" style={{ width: "18rem" }}>

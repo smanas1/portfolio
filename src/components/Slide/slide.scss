@@ -1,7 +1,29 @@
+.slider-top {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  h2 {
+    font-weight: bold;
+    font-size: 2.625rem;
+  }
+  p {
+    font-size: 1.125rem;
+    width: 689px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
 .slider {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+.slick-list {
+  padding: 20px !important;
 }
 .slide-item {
   padding: 10px;

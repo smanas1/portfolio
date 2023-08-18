@@ -1,6 +1,7 @@
 "use client";
 import sucessData from "@/Data/sucessData";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Sucess = () => {
   const [apState, changeState] = useState({
@@ -9,6 +10,8 @@ const Sucess = () => {
     title: "Get So Many AwardsIn 5 years",
     des: " There are many variations of passages of Lorem Ipsum available, but the majority.",
   });
+  const [animate, setAnimate] = useState(false);
+  const [animateion, setAnimateion] = useState(true);
 
   const toggleActive = (item, index) => {
     changeState({
@@ -17,6 +20,8 @@ const Sucess = () => {
       title: item.title,
       des: item.des,
     });
+    setAnimate((current) => !current);
+    setAnimateion((current) => !current);
   };
 
   function toggleActiveStyle(index) {
@@ -63,10 +68,26 @@ const Sucess = () => {
                 <button> Download Now</button>
               </div>
             </div>
-            <div className="sucess-left-data ">
-              <h1>{apState.title}</h1>
-              <p className="mt-4">{apState.des}</p>
-            </div>
+            {animate && (
+              <motion.div
+                initial={{ x: 100 }}
+                animate={{ x: 0 }}
+                className="sucess-left-data "
+              >
+                <h1>{apState.title}</h1>
+                <p className="mt-4">{apState.des}</p>
+              </motion.div>
+            )}
+            {animateion && (
+              <motion.div
+                initial={{ x: 100 }}
+                animate={{ x: 0 }}
+                className="sucess-left-data "
+              >
+                <h1>{apState.title}</h1>
+                <p className="mt-4">{apState.des}</p>
+              </motion.div>
+            )}
             <button className="mt-4 mb-4">Visit Now</button>
           </div>
         </div>

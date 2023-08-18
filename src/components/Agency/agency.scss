@@ -1,0 +1,41 @@
+.agency {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .agency-right {
+    .agency-card {
+      height: 140px;
+      box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      border-radius: 8px;
+      transition: 0.2s;
+      &:hover {
+        margin-left: 50px;
+      }
+    }
+  }
+
+  .agency-left {
+    margin-top: 100px;
+    h2 {
+      font-weight: bold;
+      font-size: 2.5rem;
+      span {
+        color: $main;
+      }
+    }
+    p {
+      font-size: 1.125rem;
+      color: $gray;
+    }
+    button {
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
+      border: none;
+      background-color: $main;
+      color: $white;
+    }
+  }
+}
