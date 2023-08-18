@@ -11,8 +11,7 @@ const Agency = () => {
             <div className="agency-left">
               <h2>
                 I <span>Run</span> Agency <span>Smartly</span> With My
-                <span>Team</span>
-                Member.
+                <span> Team </span> Member.
               </h2>
               <p className="mt-4 mb-4">
                 There are many variations of passages of Lorem Ipsum available,
@@ -30,7 +29,7 @@ const Agency = () => {
                     <Image
                       width={64}
                       height={64}
-                      src="/Group1.png"
+                      src="/img/Group1.png"
                       alt="agency"
                     />
                   </div>
@@ -51,7 +50,7 @@ const Agency = () => {
                     <Image
                       width={64}
                       height={64}
-                      src="/Group2.png"
+                      src="/img/Group2.png"
                       alt="agency"
                     />
                   </div>
@@ -71,7 +70,7 @@ const Agency = () => {
                     <Image
                       width={64}
                       height={64}
-                      src="/Group3.png"
+                      src="/img/Group3.png"
                       alt="agency"
                     />
                   </div>

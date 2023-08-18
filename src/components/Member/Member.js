@@ -39,7 +39,12 @@ const Member = () => {
         <div className="row">
           <div className="col-lg-6">
             <div className="member-left">
-              <Image alt="member" height={569} width={496} src="/member.webp" />
+              <Image
+                alt="member"
+                height={569}
+                width={496}
+                src="/img/member.webp"
+              />
               <div className="member-left-info">
                 <h3>5+ </h3>
                 <h3> Year</h3>
