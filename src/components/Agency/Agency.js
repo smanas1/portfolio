@@ -42,8 +42,8 @@ const Agency = () => {
               <button>Say Hello</button>
             </div>
           </div>
-          <div className="col-lg-6">
-            <div className="agency-right">
+          <div className="col-lg-6 agency-right-row">
+            <div className="agency-right ">
               {agencyData.map((item, i) => (
                 <div
                   key={i}

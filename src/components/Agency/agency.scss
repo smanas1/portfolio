@@ -1,9 +1,20 @@
-.agency {
-  .agencyactive {
-    margin-left: 50px;
+.agency-right-row {
+  @include media-breakpoint-down(md) {
   }
+}
+.agency {
   margin-top: 100px;
   margin-bottom: 100px;
+  @include media-breakpoint-down(md) {
+    margin-top: 0px;
+  }
+  .agencyactive {
+    margin-left: 50px;
+    @include media-breakpoint-down(md) {
+      margin-left: 0px;
+    }
+  }
+
   .agency-right {
     .agency-card {
       height: 140px;
@@ -12,16 +23,48 @@
       align-items: center;
       border-radius: 8px;
       transition: 0.2s;
-      &:hover {
+      @include media-breakpoint-down(md) {
+        height: 200px;
+        padding: 30px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      h3 {
+        @include media-breakpoint-down(md) {
+          margin-top: 10px !important;
+        }
+      }
+    }
+
+    p {
+      @include media-breakpoint-down(md) {
+        padding-right: 0 !important;
+        padding-top: 10px;
       }
     }
   }
 
   .agency-left {
+    @include media-breakpoint-down(md) {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      align-items: center;
+    }
     margin-top: 100px;
+    @include media-breakpoint-down(md) {
+      margin-top: 0px;
+    }
     h2 {
       font-weight: bold;
       font-size: 2.5rem;
+      @include media-breakpoint-down(md) {
+        font-size: 2rem;
+        text-align: center;
+      }
       span {
         color: $main;
       }
@@ -29,6 +72,9 @@
     p {
       font-size: 1.125rem;
       color: $gray;
+      @include media-breakpoint-down(md) {
+        text-align: center;
+      }
     }
     button {
       font-weight: bold;
@@ -38,6 +84,9 @@
       border: none;
       background-color: $main;
       color: $white;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 70px;
+      }
     }
   }
 }

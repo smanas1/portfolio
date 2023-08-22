@@ -4,12 +4,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Card from "react-bootstrap/Card";
 import Slider from "react-slick";
+
 const Slide = () => {
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
       <div
-        className={className}
+        className={`d-none d-lg-block ${className}`}
         style={{ ...style, display: "block", background: "red" }}
         onClick={onClick}
       />
@@ -20,13 +21,8 @@ const Slide = () => {
     const { className, style, onClick } = props;
     return (
       <div
-        className={className}
-        style={{
-          ...style,
-          display: "block",
-          background: "white",
-          color: "white",
-        }}
+        className={`d-none d-lg-block ${className}`}
+        style={{ ...style, display: "block", background: "green" }}
         onClick={onClick}
       />
     );
@@ -79,7 +75,7 @@ const Slide = () => {
       </div>
       <Slider {...settings}>
         <div>
-          <Card className="slide-item me-5" style={{ width: "18rem" }}>
+          <Card className="slide-item me-5">
             <Card.Img variant="top" src="/img/Rectangle2155.png" />
             <Card.Body>
               <div className="d-flex align-item-center ">
@@ -92,7 +88,7 @@ const Slide = () => {
           </Card>
         </div>
         <div>
-          <Card className="slide-item" style={{ width: "18rem" }}>
+          <Card className="slide-item">
             <Card.Img variant="top" src="/img/Rectangle2157.png" />
             <Card.Body>
               <div className="d-flex align-item-center ">
@@ -105,7 +101,7 @@ const Slide = () => {
           </Card>
         </div>
         <div>
-          <Card className="slide-item" style={{ width: "18rem" }}>
+          <Card className="slide-item">
             <Card.Img variant="top" src="/img/Rectangle2159.png" />
             <Card.Body>
               <div className="d-flex align-item-center ">
@@ -118,7 +114,7 @@ const Slide = () => {
           </Card>
         </div>
         <div>
-          <Card className="slide-item" style={{ width: "18rem" }}>
+          <Card className="slide-item">
             <Card.Img
               variant="top"
               src="https://images.pexels.com/photos/2041627/pexels-photo-2041627.jpeg?auto=compress&cs=tinysrgb&w=1600"
@@ -134,7 +130,7 @@ const Slide = () => {
           </Card>
         </div>
         <div>
-          <Card className="slide-item" style={{ width: "18rem" }}>
+          <Card className="slide-item">
             <Card.Img
               variant="top"
               src="https://images.pexels.com/photos/1181615/pexels-photo-1181615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -150,7 +146,7 @@ const Slide = () => {
           </Card>
         </div>
         <div>
-          <Card className="slide-item" style={{ width: "18rem" }}>
+          <Card className="slide-item">
             <Card.Img
               variant="top"
               src="https://images.pexels.com/photos/7238759/pexels-photo-7238759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -166,7 +162,7 @@ const Slide = () => {
           </Card>
         </div>
         <div>
-          <Card className="slide-item" style={{ width: "18rem" }}>
+          <Card className="slide-item">
             <Card.Img
               variant="top"
               src="https://images.pexels.com/photos/4348404/pexels-photo-4348404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -182,7 +178,7 @@ const Slide = () => {
           </Card>
         </div>
         <div>
-          <Card className="slide-item" style={{ width: "18rem" }}>
+          <Card className="slide-item">
             <Card.Img
               variant="top"
               src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

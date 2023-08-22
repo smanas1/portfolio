@@ -3,6 +3,9 @@
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
   }
   .partner-list {
     border: 1px solid $border;
@@ -12,6 +15,9 @@
     align-items: center;
     padding: 70px;
     cursor: pointer;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 10px;
+    }
     border-radius: 2px;
     h3 {
       margin-top: 20px;
@@ -21,6 +27,9 @@
   h2 {
     text-align: center;
     font-size: 2.625rem;
+    @include media-breakpoint-down(md) {
+      font-size: 1.625rem;
+    }
     font-weight: bold;
   }
 }

@@ -1,4 +1,15 @@
 .sucess {
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+  @include media-breakpoint-down(md) {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .sucess-box {
+    @include media-breakpoint-down(md) {
+      padding: 15px;
+    }
+  }
   .active {
     background-color: $main !important;
 
@@ -9,12 +20,16 @@
       color: $white !important;
     }
   }
-  margin-top: 7rem;
-  margin-bottom: 5rem;
+
   .sucess-title h3 {
     font-size: 3rem;
     font-weight: bold;
     margin-right: 5rem;
+    @include media-breakpoint-down(md) {
+      margin-right: 0;
+      text-align: center;
+      font-size: 2rem;
+    }
     span {
       color: $main;
     }
@@ -43,6 +58,13 @@
   // Left
 
   .sucess-left {
+    @include media-breakpoint-down(md) {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     button {
       color: $main;
       font-weight: bold;
@@ -56,12 +78,19 @@
     p {
       font-size: 1.125rem;
       color: $gray;
-      width: 470px;
+      @include media-breakpoint-down(md) {
+        padding-right: 10px;
+      }
+      padding-right: 145px;
     }
     .sucess-left-p {
+      @include media-breakpoint-down(md) {
+        margin-top: 30px;
+      }
       border-left: 2px solid $main;
       height: 80px;
       padding-left: 0.825rem;
+
       button {
         font-weight: bold;
         font-size: 1.2rem;
@@ -76,9 +105,11 @@
     .sucess-left-data {
       margin-top: 160px;
       margin-left: 0.825rem;
-
-      p {
-        width: 400px;
+      h1 {
+        @include media-breakpoint-down(md) {
+          padding: 0 30px;
+          margin-top: 20px;
+        }
       }
     }
   }

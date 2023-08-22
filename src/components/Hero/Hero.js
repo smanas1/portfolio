@@ -37,7 +37,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="mt-5">
+            <div className="mt-5 hero-image">
               <Image width={600} src={heroimage} alt="ad" />
             </div>
           </div>

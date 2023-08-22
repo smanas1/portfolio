@@ -1,8 +1,14 @@
 .hero {
   margin-top: 8rem;
+  @include media-breakpoint-down(md) {
+    margin-top: 2rem;
+  }
   .hero-title {
     font-size: 4.5rem;
     font-weight: bold;
+    @include media-breakpoint-down(md) {
+      font-size: 50px;
+    }
     .creative {
       background-color: $main;
       color: $white;
@@ -17,8 +23,17 @@
     color: $gray;
     padding-right: 18%;
     margin-top: 1.5rem;
+    @include media-breakpoint-down(md) {
+      padding-right: 10%;
+    }
   }
+
   .hero-buttons {
+    @include media-breakpoint-down(md) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     svg {
       font-size: 1.3rem;
       margin-left: 15px;
@@ -45,6 +60,11 @@
     }
   }
   .social {
+    @include media-breakpoint-down(md) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     display: flex;
     svg {
       cursor: pointer;
@@ -61,6 +81,20 @@
       width: 6.375rem;
       align-items: center;
       justify-content: space-between;
+    }
+  }
+}
+.hero-image {
+  @include media-breakpoint-down(md) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    @include media-breakpoint-down(md) {
+      height: 250px !important;
+      width: 250px !important;
+      object-fit: cover;
     }
   }
 }

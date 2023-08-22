@@ -42,7 +42,7 @@ const Sucess = () => {
                 Failure is The Power that Gives <span>Success</span>
               </h3>
             </div>
-            <div className="row gap-3 mt-5">
+            <div className="row gap-3 mt-5 sucess-box">
               {sucessData.map((item, i) => (
                 <div
                   onClick={() => toggleActive(item, i)}
