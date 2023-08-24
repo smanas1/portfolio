@@ -7,13 +7,28 @@ import menu from "@/Data/menu";
 import { DM_Sans } from "next/font/google";
 import Link from "next/link";
 import Logo from "@/img/logo";
+import { useEffect, useState } from "react";
 
 const DMSans = DM_Sans({ subsets: ["latin"], weight: ["500"] });
 
 const HeaderNav = () => {
+  const [showNav, setShowNav] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowNav(true);
+      } else {
+        setShowNav(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <Navbar expand="lg" className="">
+      <Navbar expand="lg" className={showNav ? "stickynav" : "navaftar"}>
         <Container>
           <Link href="#">
             <Logo />

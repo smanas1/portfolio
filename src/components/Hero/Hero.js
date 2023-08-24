@@ -1,3 +1,4 @@
+"use client";
 import Be from "@/img/Be";
 import Dribble from "@/img/Dribble";
 import Insta from "@/img/insta";
@@ -5,11 +6,25 @@ import Image from "next/image";
 
 import { BsArrowUpRight } from "react-icons/bs";
 import heroimage from "../../img/hero.webp";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+  const [showNav, setShowNav] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowNav(true);
+      } else {
+        setShowNav(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+  }, []);
   return (
     <>
-      <div className="container">
+      <div className={`container ${showNav ? `hero-wrapper` : `contianer`}`}>
         <div className="row">
           <div className="col-md-6 ">
             <div className="hero">
