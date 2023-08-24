@@ -46,7 +46,7 @@ const Sucess = () => {
               {sucessData.map((item, i) => (
                 <div
                   onClick={() => toggleActive(item, i)}
-                  className={`col-lg-5  rounded-3 sucess-items px-3 py-4 ${toggleActiveStyle(
+                  className={`col-md-5  rounded-3 sucess-items px-3 py-4 ${toggleActiveStyle(
                     i
                   )}`}
                   key={i}

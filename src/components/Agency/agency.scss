@@ -1,15 +1,15 @@
-.agency-right-row {
-  @include media-breakpoint-down(md) {
-  }
-}
 .agency {
   margin-top: 100px;
   margin-bottom: 100px;
+
   @include media-breakpoint-down(md) {
     margin-top: 0px;
   }
   .agencyactive {
     margin-left: 50px;
+    @include media-breakpoint-down(lg) {
+      margin-left: 0px;
+    }
     @include media-breakpoint-down(md) {
       margin-left: 0px;
     }
@@ -40,6 +40,9 @@
     }
 
     p {
+      @include media-breakpoint-down(lg) {
+        padding-right: 0 !important;
+      }
       @include media-breakpoint-down(md) {
         padding-right: 0 !important;
         padding-top: 10px;
@@ -48,6 +51,14 @@
   }
 
   .agency-left {
+    @include media-breakpoint-down(lg) {
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
     @include media-breakpoint-down(md) {
       display: flex;
       flex-direction: column;
@@ -84,6 +95,9 @@
       border: none;
       background-color: $main;
       color: $white;
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 70px;
+      }
       @include media-breakpoint-down(md) {
         margin-bottom: 70px;
       }

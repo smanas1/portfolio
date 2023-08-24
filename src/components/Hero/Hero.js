@@ -11,7 +11,7 @@ const Hero = () => {
     <>
       <div className="container">
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-md-6 ">
             <div className="hero">
               <h1 className="hero-title">
                 <span className="creative"> Creative</span> Design and Work
@@ -36,7 +36,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-md-6">
             <div className="mt-5 hero-image">
               <Image width={600} src={heroimage} alt="ad" />
             </div>

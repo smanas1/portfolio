@@ -20,11 +20,20 @@
       color: $white !important;
     }
   }
-
+  .sucess-box {
+    @include media-breakpoint-down(lg) {
+      display: flex;
+      justify-content: center;
+    }
+  }
   .sucess-title h3 {
     font-size: 3rem;
     font-weight: bold;
     margin-right: 5rem;
+    @include media-breakpoint-down(lg) {
+      text-align: center;
+      margin-right: 0;
+    }
     @include media-breakpoint-down(md) {
       margin-right: 0;
       text-align: center;
@@ -58,6 +67,13 @@
   // Left
 
   .sucess-left {
+    @include media-breakpoint-down(lg) {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     @include media-breakpoint-down(md) {
       display: flex;
       text-align: center;
@@ -78,12 +94,20 @@
     p {
       font-size: 1.125rem;
       color: $gray;
+      @include media-breakpoint-down(lg) {
+        text-align: center;
+        margin-top: 30px;
+        padding-right: 0px;
+      }
       @include media-breakpoint-down(md) {
         padding-right: 10px;
       }
       padding-right: 145px;
     }
     .sucess-left-p {
+      @include media-breakpoint-down(lg) {
+        border: none;
+      }
       @include media-breakpoint-down(md) {
         margin-top: 30px;
       }

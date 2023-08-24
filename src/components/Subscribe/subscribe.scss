@@ -8,6 +8,9 @@
   border-radius: 8px;
   margin-bottom: 100px;
   padding-bottom: 50px;
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 0px;
+  }
   @include media-breakpoint-down(md) {
     width: 100%;
     margin: 10px;
@@ -31,6 +34,12 @@
       svg {
         margin-bottom: 5px;
       }
+      @include media-breakpoint-down(lg) {
+        height: 35px;
+        width: 40px;
+        top: 3px;
+        right: 38px;
+      }
       @include media-breakpoint-down(md) {
         height: 35px;
         width: 55px;
@@ -45,6 +54,15 @@
       padding-left: 20px;
       outline: none;
       font-size: 23px;
+      @include media-breakpoint-down(lg) {
+        height: 40px;
+        width: 100%;
+        border: none;
+        font-size: 18px;
+        border-radius: 5px;
+        right: 0;
+        top: 5px;
+      }
       @include media-breakpoint-down(md) {
         height: 40px;
         width: 100%;
@@ -58,6 +76,10 @@
   }
   .subscribe-content-wrapper {
     padding: 50px;
+    @include media-breakpoint-down(lg) {
+      padding: 20px;
+      width: 100%;
+    }
     @include media-breakpoint-down(md) {
       padding: 20px;
       width: 100%;
@@ -68,6 +90,10 @@
     color: $white;
     width: 405px;
     font-size: 3rem;
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+      font-size: 2rem;
+    }
     @include media-breakpoint-down(md) {
       width: 100%;
       font-size: 2rem;

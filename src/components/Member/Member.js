@@ -56,7 +56,7 @@ const Member = () => {
             <div className="member-right">
               <h2>
                 We <span>Run</span> Agency <span>Smartly</span> With Our
-                <span>Team</span>
+                <span> Team </span>
                 Member.
               </h2>
               <p className="mt-4 mb-4">
@@ -97,7 +97,7 @@ const Member = () => {
                 >
                   {count && (
                     <div className="row">
-                      <div className="col-lg-4 member-counter-item">
+                      <div className="col-md-4 member-counter-item">
                         <h4>
                           <CountUp
                             duration={3}
@@ -108,13 +108,13 @@ const Member = () => {
                         </h4>
                         <p>Team Members</p>
                       </div>
-                      <div className="col-lg-4 member-counter-item">
+                      <div className="col-md-4 member-counter-item">
                         <h4>
                           <CountUp duration={3} start={0} end={project} />
                         </h4>
                         <p>Completed Projects</p>
                       </div>
-                      <div className="col-lg-4 member-counter-item">
+                      <div className="col-md-4 member-counter-item">
                         <h4>
                           <CountUp
                             duration={3}

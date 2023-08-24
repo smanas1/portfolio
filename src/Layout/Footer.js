@@ -19,7 +19,7 @@ const Footer = () => {
         <Container>
           <div className="row ">
             {/* Left */}
-            <div className="col-lg-4 bottom-left">
+            <div className="col-md-4 bottom-left">
               <Logo />
               <p className="pt-5 ">
                 There are many variations of passages of available, but the
@@ -27,7 +27,7 @@ const Footer = () => {
               </p>
             </div>
             {/* Service */}
-            <div className="col-lg-2 ">
+            <div className="col-md-2 ">
               <div className="footer-service">
                 <h3>Service</h3>
                 <div className="service-content pt-5">
@@ -40,7 +40,7 @@ const Footer = () => {
               </div>
             </div>
             {/* Resource */}
-            <div className="col-lg-3 ">
+            <div className="col-md-3 ">
               <div className="footer-resource">
                 <h3>Resource</h3>
                 <div className="service-content pt-5">
@@ -52,7 +52,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 ">
+            <div className="col-md-3 ">
               <div className="footer-resource">
                 <h3>Newsletter</h3>
                 <div className="footer-right-content footer-right pt-5">

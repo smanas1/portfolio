@@ -3,14 +3,21 @@
 .footer {
   background-color: #eeebf2;
   padding-top: 5.625rem;
+
   .bottom-left {
     p {
       font-family: "Open Sans", sans-serif !important;
       padding-right: 40%;
       font-size: 1.125rem;
+      @include media-breakpoint-down(lg) {
+        padding-right: 0;
+        margin-bottom: 50px;
+      }
     }
   }
   .footer-service {
+    @include media-breakpoint-down(lg) {
+    }
     h3 {
       font-weight: bold;
       font-size: 1.6rem;
@@ -74,6 +81,9 @@
 
         outline: none;
         font-size: 1.125rem;
+        @include media-breakpoint-down(lg) {
+          width: 150px;
+        }
       }
       button {
         background-color: $main;
