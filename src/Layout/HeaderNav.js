@@ -43,8 +43,8 @@ useEffect(()=>{
     window.addEventListener("scroll", handleScroll);
   }, []);
 
-  resposniv?document.body.style.overflow = 'hidden':document.body.style.overflow = 'auto';
-
+  
+   
   
   return (
     <>
